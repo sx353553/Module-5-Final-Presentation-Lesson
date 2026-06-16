@@ -10,7 +10,8 @@ userListEl.innerHTML = userData.map((user) => userHTML(user)).join("");
 
 main();
 
-function showUserPosts(userId) {
+function showUserPosts(id) {
+    localStorage.setItem("id", id)
   window.location.href = `${windows.origin}/user.html`  
 }
 
